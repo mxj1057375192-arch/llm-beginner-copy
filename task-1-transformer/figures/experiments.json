@@ -1,0 +1,155 @@
+{
+  "smoke": {
+    "best_dev_acc": 0.8508,
+    "best_epoch": 1,
+    "config": {
+      "vocab_size": 3658,
+      "num_classes": 2,
+      "d_model": 64,
+      "n_heads": 2,
+      "n_layers": 2,
+      "d_ff": 256,
+      "max_len": 200,
+      "dropout": 0.1,
+      "use_residual": true,
+      "use_layernorm": true
+    },
+    "params_m": 0.347138
+  },
+  "probe_d128_l4": {
+    "best_dev_acc": 0.8683,
+    "best_epoch": 2,
+    "config": {
+      "vocab_size": 3658,
+      "num_classes": 2,
+      "d_model": 128,
+      "n_heads": 4,
+      "n_layers": 4,
+      "d_ff": 512,
+      "max_len": 200,
+      "dropout": 0.1,
+      "use_residual": true,
+      "use_layernorm": true
+    },
+    "params_m": 1.287426
+  },
+  "base_d128h4l4": {
+    "best_dev_acc": 0.9017,
+    "best_epoch": 5,
+    "config": {
+      "vocab_size": 3658,
+      "num_classes": 2,
+      "d_model": 128,
+      "n_heads": 4,
+      "n_layers": 4,
+      "d_ff": 512,
+      "max_len": 200,
+      "dropout": 0.1,
+      "use_residual": true,
+      "use_layernorm": true
+    },
+    "params_m": 1.287426
+  },
+  "abl_l2h4": {
+    "best_dev_acc": 0.895,
+    "best_epoch": 4,
+    "config": {
+      "vocab_size": 3658,
+      "num_classes": 2,
+      "d_model": 128,
+      "n_heads": 4,
+      "n_layers": 2,
+      "d_ff": 512,
+      "max_len": 200,
+      "dropout": 0.1,
+      "use_residual": true,
+      "use_layernorm": true
+    },
+    "params_m": 0.890882
+  },
+  "abl_l1h4": {
+    "best_dev_acc": 0.8958,
+    "best_epoch": 4,
+    "config": {
+      "vocab_size": 3658,
+      "num_classes": 2,
+      "d_model": 128,
+      "n_heads": 4,
+      "n_layers": 1,
+      "d_ff": 512,
+      "max_len": 200,
+      "dropout": 0.1,
+      "use_residual": true,
+      "use_layernorm": true
+    },
+    "params_m": 0.69261
+  },
+  "abl_h1l4": {
+    "best_dev_acc": 0.8858,
+    "best_epoch": 5,
+    "config": {
+      "vocab_size": 3658,
+      "num_classes": 2,
+      "d_model": 128,
+      "n_heads": 1,
+      "n_layers": 4,
+      "d_ff": 512,
+      "max_len": 200,
+      "dropout": 0.1,
+      "use_residual": true,
+      "use_layernorm": true
+    },
+    "params_m": 1.287426
+  },
+  "abl_h8l4": {
+    "best_dev_acc": 0.8958,
+    "best_epoch": 4,
+    "config": {
+      "vocab_size": 3658,
+      "num_classes": 2,
+      "d_model": 128,
+      "n_heads": 8,
+      "n_layers": 4,
+      "d_ff": 512,
+      "max_len": 200,
+      "dropout": 0.1,
+      "use_residual": true,
+      "use_layernorm": true
+    },
+    "params_m": 1.287426
+  },
+  "abl_nores": {
+    "best_dev_acc": 0.8508,
+    "best_epoch": 4,
+    "config": {
+      "vocab_size": 3658,
+      "num_classes": 2,
+      "d_model": 128,
+      "n_heads": 4,
+      "n_layers": 4,
+      "d_ff": 512,
+      "max_len": 200,
+      "dropout": 0.1,
+      "use_residual": false,
+      "use_layernorm": true
+    },
+    "params_m": 1.287426
+  },
+  "abl_noln": {
+    "best_dev_acc": 0.8875,
+    "best_epoch": 2,
+    "config": {
+      "vocab_size": 3658,
+      "num_classes": 2,
+      "d_model": 128,
+      "n_heads": 4,
+      "n_layers": 4,
+      "d_ff": 512,
+      "max_len": 200,
+      "dropout": 0.1,
+      "use_residual": true,
+      "use_layernorm": false
+    },
+    "params_m": 1.285122
+  }
+}

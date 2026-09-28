@@ -1,5 +1,10 @@
 data/cache/
 data/*.parquet
+# data/raw/ 是从 HF 仓库直接下载的原始 .arrow 文件（3.7MB），
+# 用 python data/download_offline.py 可以随时重新生成，不必进仓库
+data/raw/
+# 非任务产物的本地文件
+原有的.txt
 ckpt/
 src/__pycache__/
 eval/__pycache__/
