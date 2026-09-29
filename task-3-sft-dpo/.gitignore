@@ -1,6 +1,10 @@
 data/cache/
 data/*.parquet
 data/*.jsonl
+# 从 ModelScope 拉下来的原始数据集（dpo_zh.json 28MB + sample.jsonl 7.7MB），
+# 是下载产物而非代码：用 data/fetch_zip_head.py 可重新生成，不入库。
+data/dpo/
+data/moss-sft/
 ckpt/
 models/
 src/__pycache__/
