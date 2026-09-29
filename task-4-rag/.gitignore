@@ -4,6 +4,9 @@ data/*.json
 data/*.pdf
 data/*.txt
 data/index/
+# 建好的 FAISS 索引产物（faiss.index + chunks.jsonl，约 4.4MB），
+# 本项目把它落在任务根目录，用 `python -m src.indexer` 可重新生成，不入库。
+/index/
 models/
 ckpt/
 src/__pycache__/
